@@ -1,0 +1,32 @@
+<p id="notice"><%= notice %></p>
+
+<h1>Materia Primas</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>Id mp</th>
+      <th>Color</th>
+      <th>Cantidad</th>
+      <th colspan="3"></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @materia_primas.each do |materia_prima| %>
+      <tr>
+        <td><%= materia_prima.id_mp %></td>
+        <td><%= materia_prima.color %></td>
+        <td><%= materia_prima.cantidad %></td>
+        <td><%= link_to 'Show', materia_prima %></td>
+        <td><%= link_to 'Edit', edit_materia_prima_path(materia_prima) %></td>
+        <td><%= link_to 'Destroy', materia_prima, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'New Materia Prima', new_materia_prima_path %>
+

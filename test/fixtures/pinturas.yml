@@ -1,0 +1,15 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  id_pintura: MyString
+  color: MyString
+  materia_1: MyString
+  materia2: MyString
+  materia3: MyString
+
+two:
+  id_pintura: MyString
+  color: MyString
+  materia_1: MyString
+  materia2: MyString
+  materia3: MyString

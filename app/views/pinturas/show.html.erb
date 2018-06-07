@@ -1,0 +1,31 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Id pintura:</strong>
+  <%= @pintura.id_pintura %>
+</p>
+
+<p>
+  <strong>Color:</strong>
+  <%= @pintura.color %>
+</p>
+
+<p>
+  <strong>Materia 1:</strong>
+  <%= @pintura.materia_1 %>
+</p>
+
+<p>
+  <strong>Materia2:</strong>
+  <%= @pintura.materia2 %>
+</p>
+
+<p>
+  <strong>Materia3:</strong>
+  <%= @pintura.materia3 %>
+</p>
+
+
+
+<%= link_to 'Edit', edit_pintura_path(@pintura) %> |
+<%= link_to 'Back', pinturas_path %>
